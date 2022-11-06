@@ -5,6 +5,7 @@ import 'package:baseflow_plugin_template/baseflow_plugin_template.dart';
 import 'package:dummy/bindings/location_binding.dart';
 import 'package:dummy/database/writeDatabase.dart';
 import 'package:dummy/screens/add_device.dart';
+import 'package:dummy/screens/geolocator.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
@@ -18,8 +19,8 @@ final MaterialColor themeMaterialColor =
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  //runApp(GeolocatorWidget());
-  runApp(addDevice());
+  runApp(GeolocatorWidget());
+  //runApp(addDevice());
 }
 
 class quiz extends StatelessWidget {
